@@ -6,7 +6,7 @@ body {
 }
 
 .main {
-  margin:0 14%;
+  margin: 0 14%;
 }
 
 .headerBg {
@@ -61,7 +61,7 @@ h1 {
 .siteNavBox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .siteNavBtns {
@@ -79,7 +79,7 @@ h1 {
 .newsLetter {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .text1 {
   width: 58%;
@@ -104,23 +104,24 @@ h1 {
 .form {
   font-size: 12px;
   margin-top: 30px;
+  width: 35%;
 }
 
 .inputTextBox {
-  display: flex;
+  
   padding-bottom: 20px;
-  flex-direction: column;
   margin: 0 20px;
 }
 .inputLabel {
   display: block;
   margin-bottom: 7px;
+  text-align: left;
 }
 
 .inputText {
   padding: 0;
   margin: 0 0;
-  width: 338px;
+  width: 100%;
   height: 30px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
@@ -140,12 +141,11 @@ input[type="radio"] {
 }
 
 .submitNewsBox {
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 20px 20px 0;
 }
 
 .submitNewsBtn {
-  width: 340px;
+  width: 100%;
   height: 39px;
   color: #888888;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -160,9 +160,10 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 79px;
 }
 
-.productNav{
+.productNav {
   text-align: center;
 }
 
@@ -183,17 +184,24 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
   font-size: 12px;
   margin-top: 44px;
-}
-
-.shareNewsForm .inputTextBox {
-  margin: 0 20px;
 }
 
 .shareNewsDescription {
   padding-top: 54px;
   text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+.shareNewsInput{
+  width: 340px;
+  height: 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  max-width: 380px;
 }
 
 .sendBtnBox {
@@ -235,13 +243,13 @@ input[type="radio"] {
 
 .footerBox {
   padding-top: 157px;
+  font-size: 12px;
 }
 
-.footerDesc{
+.footerDesc {
   margin: 0;
   color: #ffffff;
 }
-
 
 @media screen and (max-width: 420px) {
   .main {
@@ -256,4 +264,69 @@ input[type="radio"] {
     margin-left: 3.8%;
     max-width: 386px;
   }
+
+  .text1 {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+  .inputTextBox {
+    margin: 0;
+  }
+
+
+  .submitNewsBox {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  .headerTitleBox {
+    padding: 0 4%;
+    text-align: left;
+  }
+
+  .headerDescription {
+    padding-top: 5px;
+  }
+
+  .headerBg {
+   transform: skewY(16deg);
+   
+}
+.siteNavBtns{
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+
+.genreBox{
+  padding-left: 0;
+}
+
+.line{
+  width: 22%;
+  
+}
+
+.shareNewsForm{
+  display: block;
+}
+.shareNewsInput{
+  width: 100%;
+}
+
+.shareNewsDescription{
+  padding-top: 28px;
+}
+
+.footer{
+  height: 157px;
+}
+
+.footerBox{
+  padding-top: 59px;
+}
 }
