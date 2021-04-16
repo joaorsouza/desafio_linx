@@ -6,7 +6,7 @@ body {
 }
 
 .main {
-  margin: 0 14%;
+  margin:0 14%;
 }
 
 .headerBg {
@@ -154,9 +154,6 @@ input[type="radio"] {
   opacity: 1;
 }
 
-
-
-
 .titleBox {
   margin: 0;
   width: 100%;
@@ -165,13 +162,17 @@ input[type="radio"] {
   align-items: center;
 }
 
+.productNav{
+  text-align: center;
+}
+
 .line {
   width: 38%;
   height: 1px;
   background: #888888;
 }
 
-.shareNewsTitle {
+.lineTitle {
   font-size: 18px;
 
   text-align: center;
@@ -200,7 +201,7 @@ input[type="radio"] {
   text-align: center;
 }
 
-.sendBtn {
+.btn {
   width: 260px;
   height: 39px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -229,10 +230,16 @@ input[type="radio"] {
   height: 290px;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
 .footerBox {
   padding-top: 157px;
+}
+
+.footerDesc{
+  margin: 0;
+  color: #ffffff;
 }
 
 
