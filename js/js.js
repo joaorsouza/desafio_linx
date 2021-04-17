@@ -22,21 +22,23 @@ function loadProducts() {
       '<div class ="imgBox"> <img src="http:' +
       objects[index]["image"] +
       '"/>' + '</div>' + '<div class="cardDescBox">' +
-      "<div>" +
+      '<div class="productTitle">' +
       objects[index]["name"] +
       "</div>" +
-      "<div>" +
+      '<div class="productDesc">' +
       objects[index]["description"] +
       "</div>" +
-      "<div>" +
+      '<div class="oldPrice">De: R$' +
       objects[index]["oldPrice"] +
-      "</div>" +
-      "<div>" +
+      '</div>' +
+      '<div class="price">Por: R$' +
       objects[index]["price"] +
       "</div>" +
-      "<div> ou 2x de " +
+      '<div class="installment"> ou 2x de R$' +
       objects[index]["price"]/2 +
-      "</div> </div>";
+      "</div>" +
+      '<input class="buyBtn" type="url" value="Comprar">' +
+      '</div>' ;
     productGrid.appendChild(div);
   }
 }
