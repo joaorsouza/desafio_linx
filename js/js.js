@@ -1,49 +1,51 @@
-let objects = [];
+let products = [];
+let page = 1;
+let url =
+  "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=";
 
-function getProducts() { //api request
-  fetch(
-    "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1"
-  )
+function getProducts() {
+  
+  fetch(url + page)//api request
     .then((response) => response.json())
     .then((jsonObj) => {
-      objects = jsonObj["products"]; //response in json format
-      loadProducts();  
+      products = jsonObj["products"]; //response in json format
+      loadProducts();
     });
 }
 
 function loadProducts() {
-  let element = document.getElementsByClassName("productGrid"); 
+  let element = document.getElementsByClassName("productGrid");
   let productGrid = element[0];
-  
-  for (let index = 0; index < objects.length; index++) { 
+
+  for (let index = 0; index < products.length; index++) { //iterate over the products array to build the html products cards
     let div = document.createElement("div");
-    div.setAttribute('class','card')
+    div.setAttribute("class", "card");
     div.innerHTML =
       '<div class ="imgBox"> <img src="http:' +
-      objects[index]["image"] +
-      '"/>' + '</div>' + '<div class="cardDescBox">' +
+      products[index]["image"] +
+      '"/>' +
+      "</div>" +
+      '<div class="cardDescBox">' +
       '<div class="productTitle">' +
-      objects[index]["name"] +
+      products[index]["name"] +
       "</div>" +
       '<div class="productDesc">' +
-      objects[index]["description"] +
+      products[index]["description"] +
       "</div>" +
       '<div class="oldPrice">De: R$' +
-      objects[index]["oldPrice"] +
-      '</div>' +
+      products[index]["oldPrice"] +
+      "</div>" +
       '<div class="price">Por: R$' +
-      objects[index]["price"] +
+      products[index]["price"] +
       "</div>" +
       '<div class="installment"> ou 2x de R$' +
-      objects[index]["price"]/2 +
+      products[index]["price"] / 2 +
       "</div>" +
       '<input class="buyBtn" type="url" value="Comprar">' +
-      '</div>' ;
+      "</div>";
     productGrid.appendChild(div);
+    page++; // next page
   }
 }
 
-//let elemento  = document.body.getElementsByClassName('productNav')
-//  console.log(elemento[0])
-//  let div = document.createElement('div')
-//  elemento[0].appendChild(div)
+
