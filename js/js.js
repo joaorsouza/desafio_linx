@@ -41,7 +41,7 @@ function loadProducts() {
       '<div class="installment"> ou 2x de R$' +
       products[index]["price"] / 2 +
       "</div>" +
-      '<input class="buyBtn" type="url" value="Comprar">' +
+      '<input class="buyBtn" type="button" value="Comprar">' +
       "</div>";
     productGrid.appendChild(div);
     page++; // next page
