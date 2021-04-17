@@ -1,11 +1,11 @@
 let products = [];
 let page = 1;
-let url =
-  "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=";
 
 function getProducts() {
-  
-  fetch(url + page)//api request
+  let url =
+    "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=";
+
+  fetch(url + page) //api request
     .then((response) => response.json())
     .then((jsonObj) => {
       products = jsonObj["products"]; //response in json format
@@ -17,7 +17,8 @@ function loadProducts() {
   let element = document.getElementsByClassName("productGrid");
   let productGrid = element[0];
 
-  for (let index = 0; index < products.length; index++) { //iterate over the products array to build the html products cards
+  for (let index = 0; index < products.length; index++) {
+    //iterate over the products array to build the html products card
     let div = document.createElement("div");
     div.setAttribute("class", "card");
     div.innerHTML =
@@ -47,5 +48,3 @@ function loadProducts() {
     page++; // next page
   }
 }
-
-

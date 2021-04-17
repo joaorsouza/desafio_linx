@@ -238,7 +238,6 @@ input[type="radio"] {
 }
 
 .buyBtn {
-  
   text-align: center;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
@@ -401,7 +400,7 @@ input[type="radio"] {
     padding-top: 59px;
   }
 
-  .productNav{
+  .productNav {
     padding-top: 15px;
   }
 
@@ -416,16 +415,13 @@ input[type="radio"] {
     height: 0%;
     margin-bottom: 20px;
   }
-  .imgBox{
-    width: 50%;
-
-  }
-
-  .cardDescBox{
+  .imgBox {
     width: 50%;
   }
 
-
+  .cardDescBox {
+    width: 50%;
+  }
 
   .productDesc {
     display: none;
