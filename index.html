@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/css.css" />
+    <script type="text/javascript" src="js/js.js"></script>
     <title>DESAFIO LINX</title>
   </head>
 
-  <body>
-    <header>
+  <body onload="getProducts()">
+    <header>  
       <div class="headerBg"></div>
       <div class="headerTitleBox">
         <div id="subTitle">uma seleção de produtos</div>
@@ -27,7 +28,7 @@
         </div>
       </nav>
     </header>
-    <div class="main">
+    <div class="main">  <!--main-->
       <section class="newsLetterSection">
         <div class="newsLetter">
           <div class="text1">
@@ -88,7 +89,7 @@
           </div>
         </div>
       </section>
-      <section class="productGrid">
+      <section class="products">
         <div class="titleBox">
           <div class="line"></div>
           <h2 class="lineTitle">Sua seleção especial</h2>
@@ -96,6 +97,7 @@
         </div>
 
         <div class="productNav">
+          <div class="productGrid"></div> <!--js function getproducts()-->
           <input class="btn" type="submit" value="Ainda mais produtos aqui!" />
         </div>
       </section>
@@ -132,7 +134,7 @@
         </div>
       </section>
     </div>
-    <footer class="footer">
+    <footer class="footer"> <!--footer-->
       <div class="footerBg"></div>
       <div class="footerBox">
         <p class="footerDesc">Testando suas habilidades em HTML, CSS e JS</p>
