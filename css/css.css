@@ -9,6 +9,41 @@ body {
   margin: 0 14%;
 }
 
+.inputTextBox {
+  padding-bottom: 20px;
+  margin: 0 20px;
+}
+.inputLabel {
+  display: block;
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+.inputText {
+  padding: 0;
+  margin: 0 0;
+  width: 100%;
+  height: 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+.line {
+  width: 38%;
+  height: 1px;
+  background: #888888;
+}
+
+.titleBox {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 79px;
+}
+
 .headerBg {
   position: absolute;
   left: 0;
@@ -31,25 +66,24 @@ header {
   flex-direction: column;
   color: #ffffff;
 }
+
+.headerSubTitle {
+  padding-top: 69px;
+  font-size: 20px;
+  line-height: 24px;
+  opacity: 1;
+}
+
 .headerDescription {
   font-size: 14px;
   padding-top: 24px;
   margin: 0;
 }
 
-#subTitle {
-  padding-top: 69px;
-  font-size: 20px;
-  line-height: 24px;
-
-  opacity: 1;
-}
-
 h1 {
   margin: 0;
   font-size: 40px;
   line-height: 49px;
-
   opacity: 1;
 }
 
@@ -88,12 +122,12 @@ h1 {
   font-size: 12px;
 }
 
-.text1 .newsLetterTitle {
+.newsLetterTitle {
   font-size: 20px;
   font-weight: normal;
 }
 
-.text1 .newsLetterDesc {
+.newsLetterDesc {
   text-align: left;
   font: normal normal normal 12px/18px Sans-Serif;
   letter-spacing: 0px;
@@ -105,26 +139,6 @@ h1 {
   font-size: 12px;
   margin-top: 30px;
   width: 35%;
-}
-
-.inputTextBox {
-  padding-bottom: 20px;
-  margin: 0 20px;
-}
-.inputLabel {
-  display: block;
-  margin-bottom: 7px;
-  text-align: left;
-}
-
-.inputText {
-  padding: 0;
-  margin: 0 0;
-  width: 100%;
-  height: 30px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  opacity: 1;
 }
 
 .genreBox {
@@ -153,15 +167,6 @@ input[type="radio"] {
   opacity: 1;
 }
 
-.titleBox {
-  margin: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 79px;
-}
-
 .productNav {
   padding-top: 30px;
   text-align: center;
@@ -178,11 +183,6 @@ input[type="radio"] {
 .cardDescBox {
   font-size: 12px;
   text-align: left;
-}
-.line {
-  width: 38%;
-  height: 1px;
-  background: #888888;
 }
 
 .card {
