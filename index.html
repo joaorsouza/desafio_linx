@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/css.css" />
     <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/cpfValidator.js"></script>
     <title>DESAFIO LINX</title>
   </head>
 
@@ -68,8 +69,8 @@
                   <input class="inputText" type="email" id="email" />
                 </div>
                 <div class="inputTextBox">
-                  <label class="inputLabel" for="cpf">CPF:</label>
-                  <input class="inputText" type="text" id="cpf" />
+                  <label  class="inputLabel" for="cpf">CPF:</label>
+                  <input id="cpf" class="inputText" type="text" />
                 </div>
                 <div class="genreBox">
                   <div class="genre">
@@ -83,7 +84,7 @@
                 </div>
               </div>
               <div class="submitNewsBox">
-                <input class="submitNewsBtn" type="submit" value="Enviar" />
+                <input class="submitNewsBtn" type="submit" value="Enviar" onclick="validaCpf()"/>
               </div>
             </form>
           </div>
