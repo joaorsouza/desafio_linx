@@ -62,6 +62,7 @@ header {
 }
 
 .headerTitleBox {
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   color: #ffffff;
@@ -357,7 +358,7 @@ input[type="radio"] {
   }
 
   .headerTitleBox {
-    padding: 0 4%;
+    padding: 60px 4% 0;
     text-align: left;
   }
 
